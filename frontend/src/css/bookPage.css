@@ -1,0 +1,169 @@
+.book-detail {
+  display: grid;
+  gap: 1.8em;
+  grid-template-areas: 
+  'one'
+  'two'
+  'three'
+  'four'
+  'five';
+  /* grid-template-columns: repeat(2, 1fr); */
+}
+
+.book-detail .title-wrapper {
+  grid-area: one;
+}
+
+.book-detail .img-wrapper {
+  grid-area: two;
+}
+
+.book-detail .price-details {
+  grid-area: three;
+}
+
+.book-detail .actions {
+  grid-area: four;
+  display: grid;
+  gap: 1em;
+}
+
+.book-detail .secondary-information {
+  grid-area: five; 
+}
+
+.book-detail .img-wrapper {
+  text-align: center;
+}
+
+.book-detail .price-details .quantity-input {
+  width: 25ch;
+}
+
+.book-detail .actions .add-to-cart-btn {
+  width: 100%;
+}
+
+.book-detail .actions .add-to-wishlist-dropdown button {
+  width: 100%;
+}
+
+.book-detail .actions .add-to-wishlist-dropdown .dropdown-menu {
+  width: 100%;
+}
+
+.book-detail .actions .add-to-wishlist-dropdown .dropdown-menu button {
+  padding: 0.9rem 0.5rem;
+}
+
+.desktop {
+  display: none;
+}
+
+/* Genres Styling */
+.book-genre-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.5em;
+  gap: 0.8em;
+}
+
+.genre {
+  color: white;
+  text-align: center;
+  border-radius: 25px;
+  width: fit-content;
+  padding: 0.4em 1.2em;
+}
+
+.genre.horror {
+  background-color: #7a0ff0;
+}
+
+.genre.fantasy {
+  background-color: #1273ed;
+}
+
+.genre.romance {
+  background-color: #ff0011;
+}
+
+.genre.action {
+  background-color: #dd8822;
+}
+
+.genre.drama {
+  background-color: #a35c6c;
+}
+
+.genre.comedy {
+  background-color: #3fc0ae;
+}
+
+.genre.science-fiction {
+  background-color: #0d00ff;
+}
+
+.genre.mystery {
+  background-color: #040203;
+}
+
+.genre.documentary {
+  background-color: #b3744c;
+}
+
+.genre.erotica {
+  background-color: #ff0063;
+}
+
+
+@media (min-width: 44em) {
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: flex;
+    gap: 2em;
+  }
+
+  .book-detail {
+    /* grid-template-columns: repeat(2, 1fr); */
+    grid-template-areas: 
+    'two one'
+    'two three'
+    'two four'
+    'five five'
+    ;
+  }
+
+  .book-detail .price-details {
+    padding: 2.2em 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 2em
+  }
+
+  .book-detail .actions {
+    display: flex!important;
+    justify-content: start;
+    gap: 2em;
+  }
+
+  .book-detail .actions .action-btn-wrapper .btn-lg {
+    padding: 0.9rem 1.9rem;
+  }
+
+  .secondary-information {
+    padding: 1.4em;
+  }
+
+  .secondary-information .desktop .description-wrapper {
+    max-width: 62ch;
+  }
+
+  .secondary-information .desktop .details ul {
+    padding: 0.4em;
+  }
+}

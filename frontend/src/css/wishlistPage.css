@@ -1,0 +1,112 @@
+h2 {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #3E5962;
+}
+
+h3 {
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.filter-btn-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  margin-block: 0.8em;
+  gap: 1em;
+}
+
+.filter-btn-wrapper #filter-btn {
+  background-color: #3E5962;
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.filter-btn-wrapper .reverse-sort-filter-btn {
+  width: 30px;
+  height: 30px;
+  padding: 0.5em;
+  transform: rotate(90deg);
+  color: white;
+  cursor: pointer;
+  background-color: #3E5962;
+}
+
+.wishlist-items .wishlist-item {
+  display: flex;
+  margin: 0.9em;
+}
+
+.wishlist-items .wishlist-item .MuiCheckbox-root {
+  align-self: flex-start;
+}
+
+.wishlist-items .wishlist-item .item-details-main {
+  display: flex;
+  gap: 1rem;
+}
+
+.wishlist-items .wishlist-item .item-details-main .product-img-wrapper {
+  width: 70px;
+}
+
+.wishlist-items .wishlist-item .item-details-main .product-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.wishlist-items .wishlist-item .item-details-main .product-details .item-details-secondary .item-actions button {
+  margin-inline: 0.3em;
+}
+
+@media (min-width: 43em) {
+  .filter-btn-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-block: 0.8em;
+    gap: 1em;
+  }
+
+  .filter-btn-wrapper #filter-btn {
+    background-color: #3E5962;
+    color: white;
+    font-size: 1.1rem;
+  }
+
+  .wishlist-items .wishlist-item .item-details-main .product-img-wrapper {
+    padding: 1em;
+    width: auto;
+  }
+
+  .wishlist-items .wishlist-item .item-details-main .product-details {
+    padding: 1em;
+    gap: 1.4em;
+    flex-direction: row;
+  }
+
+  .wishlist-items .wishlist-item .item-details-main .product-details .product-details-primary {
+    padding: 1em;
+  }
+
+  .wishlist-items .wishlist-item .item-details-main .product-details .item-details-secondary {
+    padding: 1em;
+  } 
+
+  .wishlist-items .wishlist-item .item-details-main .product-details 
+  .item-details-secondary .secondary-details {
+    display: inline-block;
+    margin-inline: 1em;
+  }
+
+  .wishlist-items .wishlist-item .item-details-main .product-details 
+  .item-details-secondary .item-actions {
+    display: inline-block;
+  }
+
+
+}

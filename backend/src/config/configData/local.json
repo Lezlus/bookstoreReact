@@ -1,0 +1,10 @@
+{
+  "port": 5000,
+  "db": {
+    "port": 5432,
+    "user": "me",
+    "name": "finalBookStore",
+    "host": "localhost",
+    "password": "passoword"
+  }
+}

@@ -1,0 +1,7 @@
+@media (min-width: 44em) and (max-width: 75em) {
+  .favorite-books {
+    gap: 3em;
+    grid-template-columns: repeat(3, 1fr);
+    border: none;
+  }
+}

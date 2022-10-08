@@ -1,0 +1,26 @@
+body {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: black
+}
+
+a:hover {
+  color: black;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.flex { 
+  display: flex;
+}
+
+.space-even {
+  justify-content: space-evenly;
+}

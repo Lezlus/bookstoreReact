@@ -1,0 +1,43 @@
+h2, p {
+  font-family: 'Lato', sans-serif;
+}
+
+.wishlists-container header {
+  display: flex;
+  justify-content: center;
+}
+
+.wishlists-container header h2 {
+  font-size: 3rem;
+  font-weight: bolder;
+  color: #3E5962;
+}
+
+.wishlists-container .wishlist-items ul li {
+  display: flex;
+  flex-direction: column;
+  padding: 0.8em 1.2em;
+  margin: 0.2em;
+  border-bottom: 1px solid;
+}
+
+.wishlists-container .wishlist-items ul li a {
+  color: #3E5962;
+  font-weight: bold;
+}
+
+.wishlists-container .wishlist-items ul li .wishlist-details-main p:first-child {
+  color: #3E5962;
+  font-weight: bold;
+}
+
+@media(min-width: 43em) {
+  .wishlists-container .wishlist-items ul li {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .wishlists-container .wishlist-items {
+    margin: 0.9em 0.2em;
+  }
+}

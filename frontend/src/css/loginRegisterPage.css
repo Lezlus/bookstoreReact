@@ -1,0 +1,29 @@
+.auth-form-container {
+  background-color: #3E5962;
+}
+
+.auth-form { 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4em;
+}
+
+.auth-form h2 {
+  color: white;
+  font-size: 6rem;
+}
+
+.auth-form .login-form-wrapper {
+  padding: 2.5em;
+}
+
+.auth-form .login-form-wrapper form .form-label {
+  color: white;
+}
+
+.was-validated .form-control:valid {
+  border-color: transparent!important;
+  background-image: none;
+}

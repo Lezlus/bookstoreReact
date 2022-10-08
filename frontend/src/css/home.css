@@ -1,0 +1,119 @@
+.home {
+  padding-block: 0.8em;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.2rem;
+}
+
+.slick-slider .slick-arrow {
+  display: none !important;
+}
+
+/* Main Carousel */
+.book-carousel-wrapper {
+  width: 100%;
+}
+
+.book-carousel-wrapper div {
+  width: 100%;
+}
+
+.book-carousel-wrapper .img-wrapper picture img {
+  width: 100%;
+}
+
+.book-carousel-wrapper .slick-dots li button::before {
+  font-size: 13px;
+}
+
+/* Sub Carousel */
+.book-samples {
+  width: 100%;
+  flex-direction: column;
+}
+
+.book-samples h2 {
+  align-self: start;
+  font-size: 1.7rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+}
+
+.book-samples .img-wrapper img {
+  max-height: 300px;
+  margin: 0 auto;
+}
+
+.suggested-books {
+  overflow-x: scroll;
+  gap: 1em;
+}
+
+.suggested-books li {
+  padding: 0.5em;
+}
+
+.suggested-books li img {
+  max-width: 130px;
+}
+
+@media (min-width: 43em) { 
+  .home {
+    padding: 2.3em 3em;
+    gap: 5rem;
+  }
+
+  /* Carousel Styling */
+  .slick-slider .slick-arrow {
+    display: block !important;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    z-index: 999;
+  }
+
+  /* Main Carousel */
+  .book-carousel-wrapper .img-wrapper img {
+    margin: 0 auto;
+  }
+
+  .carousel .slick-prev {
+    left: 2%;
+  }
+  
+  .carousel .slick-next {
+    right: 2%;
+  }
+
+  .book-samples {
+    width: 100%;
+  }
+
+  /* Sub Carousel */
+  .book-samples h2 {
+    align-self: start;
+    font-size: 1.7rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+  }
+  
+  .book-samples .img-wrapper img {
+    max-height: 300px;
+    margin: 0 auto;
+  }
+  
+  .book-samples .slick-prev {
+    left: 3%;
+  }
+  
+  .book-samples .slick-next {
+    right: 3%;
+  }
+}
+
+@media (min-width: 120em) {
+  .book-samples {
+    width: 70%;
+  }
+}

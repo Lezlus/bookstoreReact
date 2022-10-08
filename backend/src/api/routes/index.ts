@@ -1,0 +1,10 @@
+export { router as productRouter } from './products.routes';
+export { router as publisherRouter } from './publishers.routes';
+export { router as genreRouter } from './genres.routes';
+export { router as userRouter } from './users.routes';
+export { router as cartRouter } from './carts.routes';
+export { router as couponRouter } from './coupons.routes';
+export { router as favoriteRouter } from './favorite.routes';
+export { router as orderDetailRouter } from './order_details.routes';
+export { router as wishlistItemsRouter } from './wishlist_items.routes';
+export { router as wishlistRouter } from './wishlists.routes';
